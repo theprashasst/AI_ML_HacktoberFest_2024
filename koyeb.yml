@@ -1,0 +1,18 @@
+# koyeb.yml
+
+services:
+  - name: fastapi-app
+    image: python:3.9
+    instance_type: shared
+    env:
+      - name: PYTHONUNBUFFERED
+        value: "1"
+    build:
+      dockerfile: Dockerfile
+    deployment:
+      commands:
+        - pip install -r requirements.txt
+    routes:
+      - path: /
+        service: fastapi-app
+
