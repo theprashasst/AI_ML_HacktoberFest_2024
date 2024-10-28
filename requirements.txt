@@ -1,11 +1,10 @@
-torch
-flask
 fastapi
 uvicorn
-transformers
-python-dotenv
-pandas
-scipy
-tqdm
-groq
-numpy
+# torch
+# transformers
+# python-dotenv
+# pandas
+# scipy
+# tqdm
+# groq
+# numpy
