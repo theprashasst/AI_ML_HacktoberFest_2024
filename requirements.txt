@@ -9,4 +9,3 @@ scipy
 tqdm
 groq
 numpy
-dotenv
