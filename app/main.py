@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-Payload={}
+repo_path="https://github.com/theprashasst/IdentifyMe-AI"           #example Repo path
 
 app = FastAPI()
 
@@ -27,16 +27,21 @@ async def webhook_listener(request: Request):
 
     # Process event
     payload = await request.json()
-    Payload=payload
+    repo_path=payload["repository"]["html_url"]
     event_type = request.headers.get("X-GitHub-Event")
 
+    #if even is push then update the embeddings 
+    if event_type == "push":
+        # embeddings updation
+        pass
+
     # Process event based on type
-    if event_type == "issues":
+    elif event_type == "issues":
         # Issue Processing
         print("Issue event received:")
     elif event_type == "pull_request":
         # PR Processing
         print("PR event received:")
 
-    # print(f"Received event: {event_type}")
+    print(f"Repo path: {repo_path}")
     return {"status": "Webhook received"}
