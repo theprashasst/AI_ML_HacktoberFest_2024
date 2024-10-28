@@ -1,0 +1,103 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+*.egg-info/
+build/
+develop-eggs/
+dist/
+eggs/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg
+*.whl
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook files and checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Machine learning / deep learning models
+models/
+*.h5
+*.ckpt
+*.pth
+*.joblib
+*.model
+
+# Hugging Face transformers caching and dataset storage
+.cache/
+transformers_cache/
+datasets_cache/
+
+# Flask / FastAPI logs
+*.log
+*.sqlite
+
+# Flask / FastAPI secret key
+instance/
+config.py
+.env
+
+# GitHub secrets and configs
+.github_secrets/
+github_secrets.json
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables file
+.env
+
+# Temporary files
+*.bak
+*.swp
+*~
+
+#embeddings
+*.csv
+*.npy
+metadata.json
