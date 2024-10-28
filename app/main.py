@@ -43,5 +43,5 @@ async def webhook_listener(request: Request):
         # PR Processing
         print("PR event received:")
 
-    print(f"Repo path: {repo_path}")
+    # print(f"Repo path: {repo_path}")
     return {"status": "Webhook received"}
