@@ -27,11 +27,11 @@ async def webhook_listener(request: Request):
 
     # Process event
     payload = await request.json()
-    repo_path=payload["repository"]["html_url"]
     event_type = request.headers.get("X-GitHub-Event")
 
     #if even is push then update the embeddings 
     if event_type == "push":
+        repo_path=payload["repository"]["html_url"]
         # embeddings updation
         pass
 
